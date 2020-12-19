@@ -6,16 +6,16 @@ require("dotenv").config();
 
 const environmentVariables = {
   development: {
-    port : 3000
-  },
+    port = process.env.PORT || 80
+},
 
   staging: {
-    port : 3000
+    port = process.env.PORT || 80
 },
 
   production: {
-    port : 3000
-  },
+    port = process.env.PORT || 80
+},
 
 };
 
